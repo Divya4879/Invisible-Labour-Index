@@ -1,7 +1,12 @@
-const GEMINI_API_KEY = 'AIzaSyDGubAB26aWs9zn3s2vSQsYC-lknT_GMa8';
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 
 export const generatePolicyInsights = async (scenario: any) => {
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+  
+  if (!apiKey) {
+    throw new Error('Gemini API key not configured. Please set VITE_GEMINI_API_KEY in your .env file.');
+  }
+
   const prompt = `You are a world-class policy expert. Analyze this unpaid work scenario and provide comprehensive insights.
 
 SCENARIO ANALYSIS:
@@ -66,7 +71,7 @@ Provide detailed JSON response with:
 Make insights specific, actionable, and compelling. Use real economic principles and policy examples.`;
 
   try {
-    const response = await fetch(`${GEMINI_API_URL}?key=${GEMINI_API_KEY}`, {
+    const response = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
