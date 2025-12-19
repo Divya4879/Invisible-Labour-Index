@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-neutral-50 text-neutral-900;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-neutral-900 hover:bg-neutral-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-elegant hover:shadow-refined transform hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-neutral-50 text-neutral-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-elegant hover:shadow-refined border border-neutral-200 transform hover:-translate-y-0.5;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent hover:bg-white/10 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 border border-white/30 hover:border-white/50;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-elegant border border-neutral-100 p-8 transition-all duration-300 hover:shadow-refined;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-sophisticated hover:-translate-y-1 cursor-pointer;
+  }
+  
+  .stat-card {
+    @apply bg-white rounded-xl p-8 shadow-elegant border border-neutral-100 transition-all duration-300 hover:shadow-refined hover:-translate-y-1;
+  }
+
+  .glass-card {
+    @apply bg-white/95 backdrop-blur-sm rounded-xl border border-neutral-200/50 shadow-refined;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-neutral-900 to-neutral-700 bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  }
+
+  .nav-blur {
+    @apply bg-white/95 backdrop-blur-md border-b border-neutral-200/50;
+  }
+
+  .metric-highlight {
+    @apply text-4xl font-bold text-neutral-900;
+  }
+
+  .country-card {
+    @apply bg-white rounded-xl p-6 shadow-elegant border border-neutral-100 transition-all duration-300 hover:shadow-sophisticated hover:-translate-y-2 cursor-pointer;
+  }
+
+  .chart-container {
+    @apply bg-white rounded-xl p-6 shadow-elegant border border-neutral-100;
+  }
+
+  .page-enter {
+    @apply animate-fade-in;
+  }
+
+  .stagger-children > * {
+    @apply animate-slide-up;
+  }
+
+  .stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+  .stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+  .stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+  .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+
+  .elegant-border {
+    @apply border border-neutral-200;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .sophisticated-hover:hover {
+    @apply shadow-sophisticated transform -translate-y-1;
+  }
+}
