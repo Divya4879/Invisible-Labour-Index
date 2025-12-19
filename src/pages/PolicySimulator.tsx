@@ -145,7 +145,7 @@ Generate rigorous, data-driven analysis suitable for trillion-dollar policy deci
       const content = result.candidates[0].content.parts[0].text;
       
       // Enhanced AI content parsing
-      const paragraphs = content.split(/\n\s*\n/).filter(p => p.trim().length > 50);
+      const paragraphs = content.split(/\n\s*\n/).filter((p: string) => p.trim().length > 50);
       const executiveSummary = paragraphs[0] || "AI analysis in progress...";
       
       // Extract sophisticated data points
@@ -258,7 +258,7 @@ Generate rigorous, data-driven analysis suitable for trillion-dollar policy deci
         reviewStatus: 'draft'
       });
       
-    } catch (error) {
+    } catch (error: any) {
       console.error('AI Analysis failed:', error);
       setAiInsights({
         executiveSummary: '',
@@ -270,10 +270,10 @@ Generate rigorous, data-driven analysis suitable for trillion-dollar policy deci
         analysisDate: new Date().toISOString(),
         modelVersion: '2.1.0',
         reviewStatus: 'draft',
-        error: error.message.includes('429') ? 
+        error: error?.message?.includes('429') ? 
           'Rate limit reached. Please wait a moment and try again.' : 
           'Unable to generate AI analysis. Please check your API key.',
-        errorDetails: error.message
+        errorDetails: error?.message || 'Unknown error'
       });
     }
     

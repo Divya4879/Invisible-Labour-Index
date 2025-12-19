@@ -1,5 +1,5 @@
-import React, { memo } from 'react';
-import { BarChart3, TrendingUp, AlertCircle } from 'lucide-react';
+import { memo } from 'react';
+import { BarChart3, TrendingUp } from 'lucide-react';
 import { EconomicImpact, ConfidenceInterval } from '../types/policy';
 
 interface EconomicImpactDashboardProps {
@@ -37,7 +37,7 @@ const ConfidenceDisplay = memo(({
         <span className={`text-2xl font-bold ${colorClasses[color as keyof typeof colorClasses].split(' ')[0]}`}>
           {formatValue(interval.mid)}
         </span>
-        <AlertCircle className="h-4 w-4 ml-1 text-slate-400" title={`Confidence: ${(interval.confidence * 100).toFixed(0)}%`} />
+        <span className="h-4 w-4 ml-1 text-slate-400" title={`Confidence: ${(interval.confidence * 100).toFixed(0)}%`}>ⓘ</span>
       </div>
       <div className="text-sm font-medium text-slate-700 mb-2">{label}</div>
       <div className="text-xs text-slate-500">
