@@ -260,6 +260,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Making the invisible visible, one country at a time.*
 
-[![Star this repo](https://img.shields.io/github/stars/Divya4879/Invisible-Labour-Index?style=social)](https://github.com/Divya4879/Invisible-Labour-Index)
-
 </div>
