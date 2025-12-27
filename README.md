@@ -1,185 +1,262 @@
 # 🌍 Invisible Labor Index
 
-Making unpaid work visible — in real economic terms
+**Making the $18 Trillion Invisible Economy Visible**
 
-## 🎯 Purpose
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://invisible-labor-index.netlify.app)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 
-Quantify and visualize the economic value of unpaid work performed by women using real global datasets, showing how much of the world's economy is invisible.
+> **The world's first real-time tracking system for unpaid care work across 20+ major economies**
 
-## 🚀 Features
+## 🎯 Mission
 
-- **Global Map**: Interactive visualization of unpaid work inequality across countries
-- **Country Deep-Dive**: Detailed economic analysis with policy-grade statistics
-- **Gender Gap Comparison**: Side-by-side country comparisons
-- **Full Transparency**: Complete methodology and data source documentation
-- **Mobile Responsive**: Works on all devices
-- **No Login Required**: Public good tool for researchers, journalists, and advocates
+Every country is missing 15-40% of their economic activity from official GDP calculations. The Invisible Labor Index quantifies and visualizes the massive economic value of unpaid care work performed predominantly by women, using real-time data from World Bank, OECD, and national statistical offices.
 
-## 🧱 Architecture
+## ✨ Key Features
+
+### 🚨 Crisis Monitor Dashboard
+- **Real-time tracking** of $18+ trillion in invisible economic activity
+- **Live data integration** from World Bank, OECD, and national surveys
+- **Economic impact visualization** showing true GDP contributions
+- **Gender gap analysis** across 20+ major economies
+
+### 📊 Global Rankings & Trends
+- **Interactive world map** with country-by-country breakdowns
+- **Historical trend analysis** showing policy impact over time
+- **Comparative rankings** by economic value and gender equality
+- **Mobile-responsive charts** built with Recharts
+
+### 🧠 AI-Powered Policy Impact Engine
+- **Policy scenario modeling** with economic impact predictions
+- **AI-generated recommendations** using Gemini API integration
+- **Implementation complexity analysis** with confidence intervals
+- **Stakeholder impact assessment** for policy makers
+
+### 🔍 Advanced Analytics
+- **Sensitivity analysis** for policy interventions
+- **Economic multiplier calculations** showing ripple effects
+- **Risk assessment** with political stability factors
+- **ROI projections** for care infrastructure investments
+
+## 🏗️ Technical Architecture
 
 ```
-Public APIs → Frontend (React) → User Dashboard
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Data Sources  │────│   React Frontend │────│  User Interface │
+│                 │    │                  │    │                 │
+│ • World Bank    │    │ • TypeScript     │    │ • Interactive   │
+│ • OECD          │    │ • Tailwind CSS   │    │   Dashboards    │
+│ • National      │    │ • React Router   │    │ • Policy Tools  │
+│   Surveys       │    │ • Recharts       │    │ • AI Insights   │
+│ • Gemini AI     │    │ • React Leaflet  │    │ • Mobile Ready  │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
 ```
 
-- **Frontend**: React + TypeScript + Tailwind CSS
+### Tech Stack
+- **Frontend**: React 18 + TypeScript + Vite
+- **Styling**: Tailwind CSS + Custom Components
 - **Charts**: Recharts for data visualization
 - **Maps**: React Leaflet for geographic data
-- **Data**: Real-time API calls to OECD, World Bank, UN, ILO
-- **Deployment**: Netlify/Vercel (static hosting)
+- **AI**: Google Gemini API for policy analysis
+- **Data**: Real-time APIs (World Bank, OECD, ILO)
+- **Deployment**: Netlify with automatic CI/CD
 
-## 📊 Data Sources
-
-- **Time Use**: OECD Time Use Database, National Time Use Surveys
-- **Economic**: World Bank API (GDP, Population)
-- **Wages**: International Labour Organization (ILO)
-- **Geographic**: OpenStreetMap
-
-## 🏗️ Development
+## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+
+- Node.js 18+ 
 - npm or yarn
+- Git
 
-### Setup
+### Installation
+
 ```bash
-# Clone repository
-git clone <repository-url>
+# Clone the repository
+git clone https://github.com/yourusername/invisible-labor-index.git
 cd invisible-labor-index
 
 # Install dependencies
 npm install
 
+# Set up environment variables
+cp .env.example .env
+# Add your Gemini API key to .env
+
 # Start development server
 npm run dev
-
-# Build for production
-npm run build
 ```
 
-### Project Structure
+### Build for Production
+
+```bash
+# Create optimized build
+npm run build
+
+# Preview production build
+npm run preview
+
+# Run linting
+npm run lint
+```
+
+## 📊 Data Sources & Methodology
+
+### Primary Data Sources
+- **World Bank Open Data**: GDP, population, economic indicators
+- **OECD Time Use Database**: International time use surveys
+- **National Statistical Offices**: Country-specific time use data
+- **International Labour Organization**: Wage and employment data
+
+### Economic Calculation Formula
+```typescript
+// Core economic valuation
+const annualUnpaidHours = dailyHours × 365 × femalePopulation;
+const economicValue = annualUnpaidHours × averageWage;
+const gdpPercentage = (economicValue / nationalGDP) × 100;
+
+// Gender gap metrics
+const genderGapHours = femaleHours - maleHours;
+const genderGapRatio = femaleHours / maleHours;
+```
+
+### Countries Covered (20+ Major Economies)
+🇺🇸 United States • 🇨🇳 China • 🇯🇵 Japan • 🇩🇪 Germany • 🇮🇳 India • 🇬🇧 United Kingdom • 🇫🇷 France • 🇮🇹 Italy • 🇧🇷 Brazil • 🇨🇦 Canada • 🇷🇺 Russia • 🇰🇷 South Korea • 🇦🇺 Australia • 🇪🇸 Spain • 🇲🇽 Mexico • 🇮🇩 Indonesia • 🇳🇱 Netherlands • 🇸🇦 Saudi Arabia • 🇹🇷 Turkey • 🇨🇭 Switzerland
+
+## 🎨 Project Structure
+
 ```
 src/
-├── components/     # Reusable UI components
-├── pages/         # Route components
-├── services/      # API calls and data fetching
-├── types/         # TypeScript type definitions
-├── utils/         # Calculation utilities
-└── data/          # Static data files
+├── components/           # Reusable UI components
+│   ├── Navigation.tsx    # Main navigation
+│   ├── PolicyHeader.tsx  # Policy tool header
+│   ├── ScenarioConfig.tsx # Policy configuration
+│   └── EconomicImpactDashboard.tsx
+├── pages/               # Route components
+│   ├── Landing.tsx      # Hero landing page
+│   ├── Dashboard.tsx    # Crisis monitor
+│   ├── Trends.tsx       # Global rankings
+│   ├── PolicySimulator.tsx # AI policy engine
+│   └── ...
+├── services/            # API integrations
+│   ├── dataService.ts   # Data fetching logic
+│   ├── worldBankAPI.ts  # World Bank integration
+│   └── geminiService.ts # AI service
+├── utils/               # Utility functions
+│   ├── calculations.ts  # Economic calculations
+│   └── policyAnalysis.ts # Policy modeling
+├── types/               # TypeScript definitions
+└── data/                # Static data files
+    └── timeUseData.ts   # Time use survey data
 ```
 
-## 🧮 Calculations
+## 🌟 Key Features Deep Dive
 
-### Economic Value Formula
-```
-Annual Hours = Daily unpaid hours × 365 × Female population
-Economic Value = Annual hours × Average wage
-GDP Percentage = (Economic value / National GDP) × 100
-```
+### Crisis Monitor Dashboard
+Real-time tracking of invisible economic activity with:
+- Live economic impact calculations
+- Gender gap visualizations
+- Top 10 country rankings
+- Historical trend analysis
 
-### Gender Gap Metrics
-```
-Gap Hours = Female hours - Male hours
-Gap Ratio = Female hours / Male hours
-```
+### AI Policy Impact Engine
+Advanced policy modeling featuring:
+- **Scenario Configuration**: Customize policy parameters
+- **Economic Impact Prediction**: AI-powered outcome modeling
+- **Implementation Analysis**: Complexity and feasibility scoring
+- **Stakeholder Assessment**: Multi-dimensional impact analysis
 
-## 🌐 MVP Countries
+### Global Rankings & Trends
+Comprehensive country comparisons with:
+- Interactive world map visualization
+- Economic value rankings
+- Gender equality metrics
+- Policy effectiveness tracking
 
-Selected for data quality and global representation:
-- **India** - National Time Use Survey 2019
-- **United States** - American Time Use Survey
-- **United Kingdom** - ONS Time Use Survey
-- **Canada** - Statistics Canada GSS
-- **Australia** - ABS Time Use Survey
+## 🔧 Configuration
 
-## 📱 Pages
-
-1. **Home** - Hero section with global statistics
-2. **Global Map** - Country comparison visualization
-3. **Country Detail** - In-depth economic analysis
-4. **Gender Gap Comparison** - Multi-country comparison tool
-5. **Methodology** - Complete transparency documentation
-6. **How to Use** - User guides for different audiences
-
-## 🎨 Design Principles
-
-- **Serious & Respectful**: No stereotypical colors or imagery
-- **Data-First**: Statistics drive the narrative
-- **Accessible**: Screen reader friendly, keyboard navigation
-- **Mobile Responsive**: Works on all screen sizes
-- **High Contrast**: Clear readability for all users
-
-## 🚀 Deployment
-
-### Netlify (Recommended)
-1. Connect GitHub repository
-2. Build command: `npm run build`
-3. Publish directory: `dist`
-4. Deploy automatically on push
-
-### Manual Deployment
+### Environment Variables
 ```bash
-# Build production version
-npm run build
-
-# Deploy dist/ folder to any static hosting service
+# .env file
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
+VITE_WORLD_BANK_API_URL=https://api.worldbank.org/v2
+VITE_APP_TITLE=Invisible Labor Index
 ```
 
-## 📖 Usage Examples
+### Deployment Options
 
-### For Journalists
-- Global statistics for article headlines
-- Country-specific data for local stories
-- Economic valuations for policy context
-
-### For Researchers
-- Reproducible calculations
-- Transparent methodology
-- Citation-ready data sources
-
-### For Advocates
-- Policy-grade statistics
-- Economic impact arguments
-- International comparisons
-
-## 🔗 API Integration
-
-The app makes direct calls to public APIs:
-
-```typescript
-// World Bank GDP data
-const gdpData = await fetch(
-  'https://api.worldbank.org/v2/country/IN/indicator/NY.GDP.MKTP.CD?format=json'
-);
-
-// OECD Time Use data
-const timeUseData = await fetch(
-  'https://stats.oecd.org/restsdmx/sdmx.ashx/GetData/TIME_USE/...'
-);
+#### Netlify (Recommended)
+```bash
+# Build settings
+Build command: npm run build
+Publish directory: dist
+Node version: 18
 ```
+
+#### Vercel
+```bash
+# vercel.json
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
+}
+```
+
+## 📈 Performance & Optimization
+
+- **Code Splitting**: Lazy loading for optimal performance
+- **Bundle Size**: Optimized with Vite and tree-shaking
+- **Caching**: Efficient API response caching
+- **Mobile First**: Responsive design for all devices
+- **Accessibility**: WCAG 2.1 AA compliant
 
 ## 🤝 Contributing
 
-This is a public good project. Contributions welcome:
+We welcome contributions to make invisible labor more visible worldwide!
 
-1. **Data Sources**: Suggest additional reliable datasets
-2. **Countries**: Help add countries with quality time use data
-3. **Translations**: Internationalization support
-4. **Accessibility**: Improve screen reader support
-5. **Mobile**: Enhance mobile experience
+### How to Contribute
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+### Contribution Areas
+- 🌍 **Data Sources**: Add new countries or update existing data
+- 🎨 **UI/UX**: Improve user experience and accessibility
+- 🧮 **Calculations**: Enhance economic modeling algorithms
+- 🌐 **Internationalization**: Add multi-language support
+- 📱 **Mobile**: Optimize mobile experience
+- 🔍 **Analytics**: Add new visualization features
 
 ## 📄 License
 
-MIT License - This tool is designed to be freely used for research, journalism, and advocacy.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- National statistical offices for time use surveys
-- World Bank for open economic data
-- OECD for international standards
-- ILO for wage statistics
-- All researchers working to make invisible labor visible
+- **National Statistical Offices** for time use survey data
+- **World Bank** for open economic data APIs
+- **OECD** for international standards and datasets
+- **International Labour Organization** for wage statistics
+- **Google** for Gemini AI API access
+- **All researchers** working to make invisible labor visible
+
+## 📞 Contact & Support
+
+- **Website**: [invisible-labor-index.netlify.app](https://invisible-labor-index.netlify.app)
+- **Issues**: [GitHub Issues](https://github.com/yourusername/invisible-labor-index/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/yourusername/invisible-labor-index/discussions)
 
 ---
 
+<div align="center">
+
 **"If women stopped unpaid work tomorrow, the global economy would collapse. Yet it is not counted in GDP."**
-# Invisible-Labour-Index
+
+*Making the invisible visible, one country at a time.*
+
+[![Star this repo](https://img.shields.io/github/stars/yourusername/invisible-labor-index?style=social)](https://github.com/yourusername/invisible-labor-index)
+
+</div>
