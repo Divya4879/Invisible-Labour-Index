@@ -2,27 +2,63 @@
 
 **Making the $18 Trillion Invisible Economy Visible**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://invisible-labor-index.netlify.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://invisible-labour-index.netlify.app)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 
-> **The world's first real-time tracking system for unpaid care work across 20+ major economies**
+> **The world's first real-time tracking system for unpaid care work across 10+ major economies**
 
-## 🎯 Mission
+Check it out at:- [Invisible Labor Index](https://invisible-labour-index.netlify.app)
 
-Every country is missing 15-40% of their economic activity from official GDP calculations. The Invisible Labor Index quantifies and visualizes the massive economic value of unpaid care work performed predominantly by women, using real-time data from World Bank, OECD, and national statistical offices.
+<img width="1896" height="936" alt="image" src="https://github.com/user-attachments/assets/a926ee63-2436-46b4-9739-d3231c8a908f" />
+
+---
+
+## 🎯 The $18 Trillion Economic Blind Spot
+
+Every country is missing 15-40% of their economic activity from official GDP calculations. This isn't an accounting error, it's the
+systematic exclusion of unpaid care work that keeps societies functioning. From childcare and eldercare to household management and
+community support, this invisible labor represents the largest unrecognized economic sector in human history.
+
+The Invisible Labor Index is the world's first real-time tracking system that aims to quantify and visualize this massive economic value
+of unpaid care work performed predominantly by women. Using the latest data from World Bank APIs, OECD Time Use Databases, and
+national statistical offices across 20+ major economies, it aims to reveal the true economic picture that policymakers have been missing.
+
+The Hidden Economic Reality:
+ - **$18+ trillion** in annual global economic value goes uncounted.
+ - **Women perform 75%** of the world's unpaid care work.
+ - **4.2 hours daily** average unpaid work by women vs 1.7 hours by men.
+ - **If valued at minimum wage**, unpaid care work would represent 15-40% of national GDP.
+ - **Zero recognition** in official economic indicators and policy decisions.
+
+What We Track in Real-Time:
+ - Economic value calculations using current wage data and population statistics
+ - Gender gap analysis showing the disproportionate burden on women
+ - Country-by-country breakdowns revealing which nations have the largest invisible economies
+ - Policy impact modeling to show how investments in care infrastructure could unlock economic growth
+ - Historical trends showing how this gap has evolved over time
+
+Why This Matters Now:
+Traditional economic models are fundamentally broken. They count the production of every widget and service transaction, but ignore
+the care work that enables all other economic activity. When a parent stays home to care for a child, GDP goes down. When they pay
+someone else to do the same work, GDP goes up. This accounting fiction has real consequences for policy, investment, and social
+recognition.
+
+The Invisible Labor Index makes the invisible visible, providing policymakers, researchers, and advocates with the data-driven
+evidence needed to build more inclusive economic policies and recognize the true drivers of economic prosperity.
+
+---
 
 ## ✨ Key Features
 
 ### 🚨 Crisis Monitor Dashboard
-- **Real-time tracking** of $18+ trillion in invisible economic activity
-- **Live data integration** from World Bank, OECD, and national surveys
-- **Economic impact visualization** showing true GDP contributions
-- **Gender gap analysis** across 20+ major economies
+ - **Real-time tracking** of $18+ trillion in invisible economic activity
+ - **Live data integration** from World Bank, OECD, and national surveys
+ - **Economic impact visualization** showing true GDP contributions
+ - **Gender gap analysis** across 10+ major economies
 
 ### 📊 Global Rankings & Trends
-- **Interactive world map** with country-by-country breakdowns
 - **Historical trend analysis** showing policy impact over time
 - **Comparative rankings** by economic value and gender equality
 - **Mobile-responsive charts** built with Recharts
@@ -38,6 +74,8 @@ Every country is missing 15-40% of their economic activity from official GDP cal
 - **Economic multiplier calculations** showing ripple effects
 - **Risk assessment** with political stability factors
 - **ROI projections** for care infrastructure investments
+
+---
 
 ## 🏗️ Technical Architecture
 
@@ -57,10 +95,11 @@ Every country is missing 15-40% of their economic activity from official GDP cal
 - **Frontend**: React 18 + TypeScript + Vite
 - **Styling**: Tailwind CSS + Custom Components
 - **Charts**: Recharts for data visualization
-- **Maps**: React Leaflet for geographic data
 - **AI**: Google Gemini API for policy analysis
 - **Data**: Real-time APIs (World Bank, OECD, ILO)
 - **Deployment**: Netlify with automatic CI/CD
+
+---
 
 ## 🚀 Quick Start
 
@@ -73,8 +112,8 @@ Every country is missing 15-40% of their economic activity from official GDP cal
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/invisible-labor-index.git
-cd invisible-labor-index
+git clone https://github.com/Divya4879/Invisible-Labour-Index.git
+cd Invisible-Labor-Index
 
 # Install dependencies
 npm install
@@ -87,18 +126,7 @@ cp .env.example .env
 npm run dev
 ```
 
-### Build for Production
-
-```bash
-# Create optimized build
-npm run build
-
-# Preview production build
-npm run preview
-
-# Run linting
-npm run lint
-```
+---
 
 ## 📊 Data Sources & Methodology
 
@@ -120,8 +148,10 @@ const genderGapHours = femaleHours - maleHours;
 const genderGapRatio = femaleHours / maleHours;
 ```
 
-### Countries Covered (20+ Major Economies)
+### Countries Covered (10+ Major Economies)
 🇺🇸 United States • 🇨🇳 China • 🇯🇵 Japan • 🇩🇪 Germany • 🇮🇳 India • 🇬🇧 United Kingdom • 🇫🇷 France • 🇮🇹 Italy • 🇧🇷 Brazil • 🇨🇦 Canada • 🇷🇺 Russia • 🇰🇷 South Korea • 🇦🇺 Australia • 🇪🇸 Spain • 🇲🇽 Mexico • 🇮🇩 Indonesia • 🇳🇱 Netherlands • 🇸🇦 Saudi Arabia • 🇹🇷 Turkey • 🇨🇭 Switzerland
+
+---
 
 ## 🎨 Project Structure
 
@@ -150,11 +180,13 @@ src/
     └── timeUseData.ts   # Time use survey data
 ```
 
-## 🌟 Key Features Deep Dive
+---
+
+## 🔎 Project Deep Dive
 
 ### Crisis Monitor Dashboard
-Real-time tracking of invisible economic activity with:
-- Live economic impact calculations
+Based on latest data, tracking of invisible economic activity with:
+- The latest economic impact calculations
 - Gender gap visualizations
 - Top 10 country rankings
 - Historical trend analysis
@@ -168,40 +200,11 @@ Advanced policy modeling featuring:
 
 ### Global Rankings & Trends
 Comprehensive country comparisons with:
-- Interactive world map visualization
 - Economic value rankings
 - Gender equality metrics
 - Policy effectiveness tracking
 
-## 🔧 Configuration
-
-### Environment Variables
-```bash
-# .env file
-VITE_GEMINI_API_KEY=your_gemini_api_key_here
-VITE_WORLD_BANK_API_URL=https://api.worldbank.org/v2
-VITE_APP_TITLE=Invisible Labor Index
-```
-
-### Deployment Options
-
-#### Netlify (Recommended)
-```bash
-# Build settings
-Build command: npm run build
-Publish directory: dist
-Node version: 18
-```
-
-#### Vercel
-```bash
-# vercel.json
-{
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite"
-}
-```
+---
 
 ## 📈 Performance & Optimization
 
@@ -211,9 +214,11 @@ Node version: 18
 - **Mobile First**: Responsive design for all devices
 - **Accessibility**: WCAG 2.1 AA compliant
 
+---
+
 ## 🤝 Contributing
 
-We welcome contributions to make invisible labor more visible worldwide!
+Contributions are welcome to make invisible labor more visible worldwide!
 
 ### How to Contribute
 1. **Fork** the repository
@@ -230,9 +235,13 @@ We welcome contributions to make invisible labor more visible worldwide!
 - 📱 **Mobile**: Optimize mobile experience
 - 🔍 **Analytics**: Add new visualization features
 
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
 
 ## 🙏 Acknowledgments
 
@@ -241,15 +250,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **OECD** for international standards and datasets
 - **International Labour Organization** for wage statistics
 - **Google** for Gemini AI API access
-- **All researchers** working to make invisible labor visible
-
-## 📞 Contact & Support
-
-- **Website**: [invisible-labor-index.netlify.app](https://invisible-labor-index.netlify.app)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/invisible-labor-index/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/invisible-labor-index/discussions)
 
 ---
+
 
 <div align="center">
 
@@ -257,6 +260,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Making the invisible visible, one country at a time.*
 
-[![Star this repo](https://img.shields.io/github/stars/yourusername/invisible-labor-index?style=social)](https://github.com/yourusername/invisible-labor-index)
+[![Star this repo](https://img.shields.io/github/stars/Divya4879/Invisible-Labour-Index?style=social)](https://github.com/Divya4879/Invisible-Labour-Index)
 
 </div>
